@@ -1,0 +1,11 @@
+<h1>Welcome to maze <br>you are in <%= @room %></h1>
+<h2>Which room you whould like to go</h2>
+<h3><%= @msg%></h3>
+<form class="" action="/output" method="post">
+  <select name="direction">
+    <option value=""> option</option>
+    <option value="<%= @dir[0] %>"><%= @dir[0] %></option>
+    <option value="<%= @dir[1] %>"><%= @dir[1] %></option>
+  </select>
+  <input type="submit" value="submit">
+</form>
